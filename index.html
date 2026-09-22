@@ -1,58 +1,89 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>عمر عبد الرحمن شادي | بورتفوليو تحليل البيانات</title>
+    <title>Omar Abdelrahman Shady | Data Analyst Portfolio</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; color: #334155; margin: 0; padding: 20px; line-height: 1.6; }
-        .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        h1 { color: #1e293b; margin-bottom: 5px; }
-        .subtitle { color: #2563eb; font-weight: bold; margin-bottom: 20px; }
-        .section { margin-bottom: 30px; border-bottom: 1px solid #e2e8f0; padding-bottom: 20px; }
-        h2 { color: #0f172a; border-right: 4px solid #2563eb; padding-right: 10px; }
-        .kpi-container { display: flex; gap: 15px; flex-wrap: wrap; margin: 15px 0; }
-        .kpi-card { background: #eff6ff; padding: 15px; border-radius: 8px; flex: 1; min-width: 150px; text-align: center; }
-        .kpi-title { font-size: 0.85rem; color: #64748b; }
-        .kpi-value { font-size: 1.3rem; font-weight: bold; color: #2563eb; }
-        ul { padding-right: 20px; }
-        .btn { display: inline-block; background: #2563eb; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+        :root {
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #334155;
+            --text-light: #64748b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; }
+        .container { max-width: 900px; margin: auto; background: var(--card-bg); padding: 35px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        header { border-bottom: 2px solid #e2e8f0; padding-bottom: 20px; margin-bottom: 25px; }
+        h1 { color: var(--primary); font-size: 2.2rem; margin-bottom: 5px; }
+        .subtitle { color: var(--accent); font-weight: 600; font-size: 1.1rem; }
+        .section { margin-bottom: 30px; border-bottom: 1px solid #e2e8f0; padding-bottom: 25px; }
+        .section:last-child { border-bottom: none; }
+        h2 { color: var(--primary); border-left: 4px solid var(--accent); padding-left: 12px; margin-bottom: 15px; font-size: 1.4rem; }
+        p { margin-bottom: 15px; color: var(--text); }
+        .kpi-container { display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0; }
+        .kpi-card { background: #eff6ff; padding: 18px; border-radius: 8px; flex: 1; min-width: 160px; text-align: center; border: 1px solid #dbeafe; }
+        .kpi-title { font-size: 0.85rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.5px; }
+        .kpi-value { font-size: 1.5rem; font-weight: bold; color: var(--accent); margin-top: 5px; }
+        ul { margin-left: 20px; margin-bottom: 15px; }
+        li { margin-bottom: 8px; }
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: background 0.3s; }
+        .btn:hover { background: #1d4ed8; }
     </style>
 </head>
 <body>
+
 <div class="container">
-    <h1>عمر عبد الرحمن شادي</h1>
-    <div class="subtitle">متخصص إكسيل وتحليل بيانات | Excel & Data Analyst</div>
+    <header>
+        <h1>Omar Abdelrahman Shady</h1>
+        <div class="subtitle">Data Analyst | Excel & Financial Analytics Specialist</div>
+    </header>
     
     <div class="section">
-        <h2>نبذة عني</h2>
-        <p>متحمس ومتخصص في معالجة وتحليل البيانات باستخدام Microsoft Excel، أركز على تحويل البيانات الضخمة إلى لوحات تحكم تفاعلية وتقارير بصرية تساعد الإدارة على اتخاذ قرارات دقيقة وسريعة.</p>
+        <h2>About Me</h2>
+        <p>Ambitious Data Analytics Intern with a solid academic background in accounting principles. Passionate about leveraging Advanced Excel, Pivot Tables, SQL, Power BI, and Python to transform complex datasets into interactive dashboards and actionable business insights.</p>
     </div>
 
     <div class="section">
-        <h2>مشروع مميز: Pizza Sales Performance Analytics</h2>
-        <p>تحليل شامل لبيانات المبيعات لمطعم بيتزا لاستخراج مؤشرات الأداء (KPIs) وتحديد المنتجات الأكثر ربحية باستخدام Advanced Excel, Pivot Tables, وDynamic Slicers.</p>
+        <h2>Featured Project: Pizza Sales Performance Analytics</h2>
+        <p>Built an interactive Excel dashboard analyzing restaurant sales data to identify revenue drivers, evaluate category performance, and highlight best-selling products.</p>
         
         <div class="kpi-container">
-            <div class="kpi-card"><div class="kpi-title">إجمالي الإيرادات</div><div class="kpi-value">$8,436.05</div></div>
-            <div class="kpi-card"><div class="kpi-title">عدد الطلبات</div><div class="kpi-value">499</div></div>
-            <div class="kpi-card"><div class="kpi-title">الوحدات المباعة</div><div class="kpi-value">511</div></div>
-            <div class="kpi-card"><div class="kpi-title">متوسط الطلب</div><div class="kpi-value">$16.91</div></div>
+            <div class="kpi-card">
+                <div class="kpi-title">Total Revenue</div>
+                <div class="kpi-value">$8,436.05</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Total Orders</div>
+                <div class="kpi-value">499</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Pizzas Sold</div>
+                <div class="kpi-value">511</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-title">Avg Order Value</div>
+                <div class="kpi-value">$16.91</div>
+            </div>
         </div>
 
-        <h3>أهم النتائج والتوصيات:</h3>
+        <h3>Key Insights & Recommendations:</h3>
         <ul>
-            <li>فئة <strong>Veggie</strong> حققت أعلى إيرادات بقيمة $2,365.25 (28% من المبيعات).</li>
-            <li>الحجم الكبير <strong>(L)</strong> يمثل 47.5% من إجمالي المبيعات الإجمالية.</li>
-            <li>المنتج الأكثر مبيعاً: <strong>The Classic Deluxe Pizza</strong> بإيرادات $459.00.</li>
+            <li><strong>Category Performance:</strong> The "Veggie" category generated the highest revenue at $2,365.25 (28% of total revenue), closely followed by "Classic" at $2,274.75.</li>
+            <li><strong>Size Impact:</strong> Large (L) size pizzas are the primary revenue driver, accounting for 47.5% of total sales ($4,004.50).</li>
+            <li><strong>Top Product:</strong> "The Classic Deluxe Pizza" led overall sales with 30 units sold ($459.00 revenue).</li>
+            <li><strong>Technical Tools:</strong> Advanced Excel, Dynamic Pivot Tables, Pivot Charts, Data Cleaning, and Dynamic Slicers.</li>
         </ul>
     </div>
 
-    <div class="section" style="text-align: center; border: none;">
-        <h2>تواصل معي</h2>
+    <div class="section" style="text-align: center;">
+        <h2>Get In Touch</h2>
         <p>Email: Omarshady506@gmail.com | Phone: +20 1121810997</p>
-        <a href="mailto:Omarshady506@gmail.com" class="btn">إرسال بريد إلكتروني</a>
+        <a href="mailto:Omarshady506@gmail.com" class="btn">Send Email</a>
     </div>
 </div>
+
 </body>
 </html>
