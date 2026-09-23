@@ -6,8 +6,9 @@
     <title>Omar Abdelrahman Shady | Data Analyst Portfolio</title>
     <style>
         :root {
-            --primary: #1e293b;
+            --primary: #0f172a;
             --accent: #2563eb;
+            --success: #10b981;
             --bg: #f8fafc;
             --card-bg: #ffffff;
             --text: #334155;
@@ -15,7 +16,7 @@
         }
         * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
         body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; }
-        .container { max-width: 900px; margin: auto; background: var(--card-bg); padding: 35px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+        .container { max-width: 950px; margin: auto; background: var(--card-bg); padding: 35px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
         header { border-bottom: 2px solid #e2e8f0; padding-bottom: 20px; margin-bottom: 25px; }
         h1 { color: var(--primary); font-size: 2.2rem; margin-bottom: 5px; }
         .subtitle { color: var(--accent); font-weight: 600; font-size: 1.1rem; }
@@ -23,14 +24,27 @@
         .section:last-child { border-bottom: none; }
         h2 { color: var(--primary); border-left: 4px solid var(--accent); padding-left: 12px; margin-bottom: 15px; font-size: 1.4rem; }
         p { margin-bottom: 15px; color: var(--text); }
+        
+        .dashboard-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            margin: 15px 0 20px 0;
+            border: 1px solid #cbd5e1;
+        }
+
         .kpi-container { display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0; }
         .kpi-card { background: #eff6ff; padding: 18px; border-radius: 8px; flex: 1; min-width: 160px; text-align: center; border: 1px solid #dbeafe; }
         .kpi-title { font-size: 0.85rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.5px; }
         .kpi-value { font-size: 1.5rem; font-weight: bold; color: var(--accent); margin-top: 5px; }
         ul { margin-left: 20px; margin-bottom: 15px; }
         li { margin-bottom: 8px; }
-        .btn { display: inline-block; background: var(--accent); color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 10px; transition: background 0.3s; }
-        .btn:hover { background: #1d4ed8; }
+        
+        .btn-group { display: flex; gap: 12px; flex-wrap: wrap; margin: 15px 0; }
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+        .btn-download { background: var(--success); }
+        .btn:hover { opacity: 0.9; }
     </style>
 </head>
 <body>
@@ -48,8 +62,15 @@
 
     <div class="section">
         <h2>Featured Project: Pizza Sales Performance Analytics</h2>
-        <p>Built an interactive Excel dashboard analyzing restaurant sales data to identify revenue drivers, evaluate category performance, and highlight best-selling products.</p>
+        <p>Built an executive Excel dashboard analyzing restaurant sales data to identify revenue drivers, evaluate category performance, and highlight top-selling products.</p>
         
+        <!-- Dashboard Screenshot -->
+        <img src="dashboard.png" alt="Pizza Sales Analytics Dashboard" class="dashboard-img">
+
+        <div class="btn-group">
+            <a href="Project 1.xlsx" download class="btn btn-download">📥 Download Excel Workbook (Project 1.xlsx)</a>
+        </div>
+
         <div class="kpi-container">
             <div class="kpi-card">
                 <div class="kpi-title">Total Revenue</div>
@@ -72,9 +93,9 @@
         <h3>Key Insights & Recommendations:</h3>
         <ul>
             <li><strong>Category Performance:</strong> The "Veggie" category generated the highest revenue at $2,365.25 (28% of total revenue), closely followed by "Classic" at $2,274.75.</li>
-            <li><strong>Size Impact:</strong> Large (L) size pizzas are the primary revenue driver, accounting for 47.5% of total sales ($4,004.50).</li>
+            <li><strong>Size Impact:</strong> Large (L) size pizzas are the primary revenue driver, accounting for 39.5% of total pizzas sold and 47.5% of overall revenue ($4,004.50).</li>
             <li><strong>Top Product:</strong> "The Classic Deluxe Pizza" led overall sales with 30 units sold ($459.00 revenue).</li>
-            <li><strong>Technical Tools:</strong> Advanced Excel, Dynamic Pivot Tables, Pivot Charts, Data Cleaning, and Dynamic Slicers.</li>
+            <li><strong>Technical Tools:</strong> Advanced Excel, Dynamic Pivot Tables, Pivot Charts, Data Cleaning, and Visual Data Formatting.</li>
         </ul>
     </div>
 
