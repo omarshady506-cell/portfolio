@@ -3,108 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omar Abdelrahman Shady | Data Analyst Portfolio</title>
-    <style>
-        :root {
-            --primary: #0f172a;
-            --accent: #2563eb;
-            --success: #10b981;
-            --bg: #f8fafc;
-            --card-bg: #ffffff;
-            --text: #334155;
-            --text-light: #64748b;
-        }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 20px; }
-        .container { max-width: 950px; margin: auto; background: var(--card-bg); padding: 35px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-        header { border-bottom: 2px solid #e2e8f0; padding-bottom: 20px; margin-bottom: 25px; }
-        h1 { color: var(--primary); font-size: 2.2rem; margin-bottom: 5px; }
-        .subtitle { color: var(--accent); font-weight: 600; font-size: 1.1rem; }
-        .section { margin-bottom: 30px; border-bottom: 1px solid #e2e8f0; padding-bottom: 25px; }
-        .section:last-child { border-bottom: none; }
-        h2 { color: var(--primary); border-left: 4px solid var(--accent); padding-left: 12px; margin-bottom: 15px; font-size: 1.4rem; }
-        p { margin-bottom: 15px; color: var(--text); }
-        
-        .dashboard-img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            margin: 15px 0 20px 0;
-            border: 1px solid #cbd5e1;
-        }
-
-        .kpi-container { display: flex; gap: 15px; flex-wrap: wrap; margin: 20px 0; }
-        .kpi-card { background: #eff6ff; padding: 18px; border-radius: 8px; flex: 1; min-width: 160px; text-align: center; border: 1px solid #dbeafe; }
-        .kpi-title { font-size: 0.85rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.5px; }
-        .kpi-value { font-size: 1.5rem; font-weight: bold; color: var(--accent); margin-top: 5px; }
-        ul { margin-left: 20px; margin-bottom: 15px; }
-        li { margin-bottom: 8px; }
-        
-        .btn-group { display: flex; gap: 12px; flex-wrap: wrap; margin: 15px 0; }
-        .btn { display: inline-block; background: var(--accent); color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
-        .btn-download { background: var(--success); }
-        .btn:hover { opacity: 0.9; }
-    </style>
+    <title>Omar Abdelrahman Shady | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="container">
+    <!-- Header / Navbar -->
     <header>
-        <h1>Omar Abdelrahman Shady</h1>
-        <div class="subtitle">Data Analyst | Excel & Financial Analytics Specialist</div>
+        <nav class="navbar">
+            <a href="#" class="logo">Omar <span>Shady</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="btn-primary">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <div class="section">
-        <h2>About Me</h2>
-        <p>Ambitious Data Analytics Intern with a solid academic background in accounting principles. Passionate about leveraging Advanced Excel, Pivot Tables, SQL, Power BI, and Python to transform complex datasets into interactive dashboards and actionable business insights.</p>
-    </div>
 
-    <div class="section">
-        <h2>Featured Project: Pizza Sales Performance Analytics</h2>
-        <p>Built an executive Excel dashboard analyzing restaurant sales data to identify revenue drivers, evaluate category performance, and highlight top-selling products.</p>
-        
-        <!-- Dashboard Screenshot -->
-        <img src="dashboard.png" alt="Pizza Sales Analytics Dashboard" class="dashboard-img">
-
-        <div class="btn-group">
-            <a href="Project 1.xlsx" download class="btn btn-download">📥 Download Excel Workbook (Project 1.xlsx)</a>
-        </div>
-
-        <div class="kpi-container">
-            <div class="kpi-card">
-                <div class="kpi-title">Total Revenue</div>
-                <div class="kpi-value">$8,436.05</div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="profile.jpg" alt="Omar Abdelrahman Shady">
             </div>
-            <div class="kpi-card">
-                <div class="kpi-title">Total Orders</div>
-                <div class="kpi-value">499</div>
-            </div>
-            <div class="kpi-card">
-                <div class="kpi-title">Pizzas Sold</div>
-                <div class="kpi-value">511</div>
-            </div>
-            <div class="kpi-card">
-                <div class="kpi-title">Avg Order Value</div>
-                <div class="kpi-value">$16.91</div>
+            <div class="hero-text">
+                <h3>Hello, I'm</h3>
+                <h1>Omar Abdelrahman Shady</h1>
+                <h2>Fresh Graduate Accountant & Data Analytics Intern</h2>
+                <p>Bridging financial expertise with data-driven analytical insights using Python, SQL, Power BI, Excel, and Tableau.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
             </div>
         </div>
+    </section>
 
-        <h3>Key Insights & Recommendations:</h3>
-        <ul>
-            <li><strong>Category Performance:</strong> The "Veggie" category generated the highest revenue at $2,365.25 (28% of total revenue), closely followed by "Classic" at $2,274.75.</li>
-            <li><strong>Size Impact:</strong> Large (L) size pizzas are the primary revenue driver, accounting for 39.5% of total pizzas sold and 47.5% of overall revenue ($4,004.50).</li>
-            <li><strong>Top Product:</strong> "The Classic Deluxe Pizza" led overall sales with 30 units sold ($459.00 revenue).</li>
-            <li><strong>Technical Tools:</strong> Advanced Excel, Dynamic Pivot Tables, Pivot Charts, Data Cleaning, and Visual Data Formatting.</li>
-        </ul>
-    </div>
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-card">
+            <p>Ambitious Fresh Graduate Accountant from Tanta University with a solid academic foundation in financial accounting and bookkeeping, paired with practical training in Data Analytics through the Digital Egypt Pioneers Initiative (DEPI)[cite: 1]. Skilled in cleaning, analyzing, and visualizing complex business data to drive informed decision-making[cite: 1].</p>
+        </div>
+    </section>
 
-    <div class="section" style="text-align: center;">
-        <h2>Get In Touch</h2>
-        <p>Email: Omarshady506@gmail.com | Phone: +20 1121810997</p>
-        <a href="mailto:Omarshady506@gmail.com" class="btn">Send Email</a>
-    </div>
-</div>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical & Professional Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-chart-column"></i> Data Analytics & Visualization</h3>
+                <ul>
+                    <li>Advanced Excel (Pivot Tables, VLOOKUP, Data Modeling)[cite: 1]</li>
+                    <li>SQL Server[cite: 1]</li>
+                    <li>Power BI & Tableau[cite: 1]</li>
+                    <li>Python (Data Analysis)[cite: 1]</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-calculator"></i> Accounting Core</h3>
+                <ul>
+                    <li>Financial Accounting[cite: 1]</li>
+                    <li>General Ledger & Bookkeeping[cite: 1]</li>
+                    <li>Financial Reporting Principles[cite: 1]</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fa-solid fa-brain"></i> Professional Competencies</h3>
+                <ul>
+                    <li>Data-Driven Decision Making[cite: 1]</li>
+                    <li>Problem Solving & Critical Thinking[cite: 1]</li>
+                    <li>Teamwork & Cross-functional Collaboration[cite: 1]</li>
+                    <li>Time Management & Adaptability[cite: 1]</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Education & Certifications</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Faculty of Commerce, Tanta University</h3>
+                <span class="date">2021 - 2025</span>
+                <p>Bachelor of Accounting (Grade: Good)[cite: 1]</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Digital Egypt Pioneers Initiative (DEPI)</h3>
+                <span class="date">August 2025 - Present</span>
+                <p>Data Analytics Intern - Hands-on training in SQL, Python, Power BI, and Tableau[cite: 1].</p>
+            </div>
+            <div class="timeline-item">
+                <h3>The American University in Cairo (AUC)</h3>
+                <span class="date">October 2025</span>
+                <p>English for Effective Communication (CEFR A2 Certified)[cite: 1]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Project</h2>
+        <div class="project-card">
+            <div class="project-header">
+                <h3>📊 Pizza Restaurant Sales Analysis (2015)</h3>
+                <span class="tag">Excel / Pivot Tables / Dashboard</span>
+            </div>
+            <p class="project-desc">A comprehensive data analysis project examining 2015 sales performance for a pizza restaurant[cite: 2, 3, 4]. Processed and modeled data using Pivot Tables and built an interactive dashboard to evaluate key performance indicators, size trends, and purchasing patterns[cite: 2, 3, 4].</p>
+            
+            <!-- Dashboard Image -->
+            <div class="project-img-container">
+                <img src="dashboard.png" alt="Sales Dashboard 2015" class="project-img">
+            </div>
+
+            <div class="kpi-container">
+                <div class="kpi-box">
+                    <h4>Total Quantity</h4>
+                    <p>511 units[cite: 2, 3]</p>
+                </div>
+                <div class="kpi-box">
+                    <h4>Total Revenue</h4>
+                    <p>$8,436[cite: 2, 3]</p>
+                </div>
+                <div class="kpi-box">
+                    <h4>Total Customers</h4>
+                    <p>499[cite: 2, 3]</p>
+                </div>
+            </div>
+
+            <!-- Data Charts & Pivot Analysis Images -->
+            <div class="project-img-grid">
+                <img src="data_charts.png" alt="Pivot Table Analysis" class="project-img">
+                <img src="data.png" alt="Detailed Category Breakdown" class="project-img">
+            </div>
+
+            <div class="insights">
+                <h4>Key Insights & Takeaways:</h4>
+                <ul>
+                    <li><strong>Top Category:</strong> Classic category led sales with 152 units sold, followed by Veggie (141 units)[cite: 2, 3].</li>
+                    <li><strong>Most Popular Size:</strong> Large (L) generated $4,005 in revenue across 202 units[cite: 3, 4].</li>
+                    <li><strong>Peak Demand:</strong> June experienced peak sales volume (54 units), followed by August (53 units)[cite: 2, 3].</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-dark">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <p>Omarshady506@gmail.com[cite: 1]</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <p>+20 1121810997 / +20 1557020617[cite: 1]</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>El Agouza, Giza, Egypt[cite: 1]</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Omar Abdelrahman Shady. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
